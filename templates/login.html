@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | CloudSky</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url("/static/plane1.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.35);
+            backdrop-filter: blur(3px);
+            z-index: 1;
+        }
+        .login-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            padding: 50px 40px;
+            border-radius: 40px;
+            width: 550px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            z-index: 3;
+        }
+        .profile-icon {
+            background: #0d0d0e;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: -90px auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+        .form-group input {
+            width: 90%;
+            padding: 14px 14px 14px 45px;
+            border: none;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.85);
+            font-size: 16px;
+            outline: none;
+        }
+        .form-group .icon {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #333;
+            font-size: 18px;
+        }
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 25px;
+            color: white;
+        }
+        .form-options a {
+            color: #cfefff;
+            text-decoration: none;
+        }
+        .form-options a:hover {
+            text-decoration: underline;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(to right, #bec0c2, #9fa1a5);
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: linear-gradient(to right, #e9e4eb, #e8e9eb);
+        }
+        .small {
+            color: white;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .small a {
+            color: #ffd;
+            text-decoration: none;
+        }
+        /* Flash message styling */
+        .flash.success {
+            color: #d4edda;
+            background: rgba(40, 167, 69, 0.2);
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .flash.error {
+            color: #f8d7da;
+            background: rgba(220, 53, 69, 0.2);
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        /* Admin Icon - Bottom Left */
+        .admin-icon {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            width: 4%;
+            height: 40px;
+            background: rgba(8, 8, 8, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .admin-icon:hover {
+            background: rgb(14, 13, 13);
+            transform: scale(1.1);
+        }
+        .admin-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .login-card { width: 98vw; padding: 14vw 2vw; border-radius: 22px;}
+            .profile-icon { width:54px; height:54px; font-size:27px;}
+            .admin-icon { width:40px; height:40px; left:8px; bottom:8px; }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .login-card { width: 80vw;}
+            .admin-icon { width:46px; height:46px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <!-- Admin Icon - Bottom Left -->
+    <a href="{{ url_for('admin_login') }}" class="admin-icon" title="Admin Login">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+        </svg>
+    </a>
+    <div class="login-card">
+        <div class="profile-icon">👤</div>
+        <h2 style="color:white; margin-bottom: 25px;">Login</h2>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul style="list-style: none; padding: 0;">
+              {% for category, message in messages %}
+                <li class="flash {{ category }}">{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        <form method="POST">
+            <div class="form-group">
+                <span class="icon">📧</span>
+                <input type="text" name="email_or_username" placeholder="Email ID" required>
+            </div>
+            <div class="form-group">
+                <span class="icon">🔒</span>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="form-options">
+                <label>
+                    <input type="checkbox" name="remember"><u> Remember me</u>
+                </label>
+                <a href="#"><u>Forgot Password?</u></a>
+            </div>
+            <button type="submit">LOGIN</button>
+        </form>
+        <p class="small">Don't have an account? <a href="{{ url_for('register') }}"><u>Register</u></a></p>
+    </div>
+</body>
+</html>

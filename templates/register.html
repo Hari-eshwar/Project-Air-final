@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register | CloudSky</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+        html, body {
+            /* Hide scrollbar but allow scrolling */
+            scrollbar-width: none;        /* Firefox */
+            -ms-overflow-style: none;     /* IE and Edge */
+            height: 100%;
+            width: 100%;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none;                /* Chrome, Safari, Opera */
+        }
+        body { 
+            margin:0; padding:0; 
+            font-family: Josefin-sans, sans-serif; 
+            color:white; 
+            background: url("/static/plane2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            overflow-y: scroll;   /* Ensure scroll works */
+            min-height: 100vh;
+        }
+        .container { 
+            background: rgba(0,0,0,0.75); 
+            max-width: 500px; 
+            margin: 80px auto; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 20px rgba(0,0,0,0.6); 
+        }
+        h1 { 
+            color:#fffdfd; 
+            text-align:center; 
+            margin-bottom:20px; 
+        }
+        .form-group { 
+            margin-bottom:15px; 
+        }
+        label { 
+            display:block; 
+            margin-bottom:6px; 
+            font-weight:600; 
+            color:#d1d5db; 
+        }
+        input { 
+            width:98%; 
+            padding:10px; 
+            border-radius:6px; 
+            border:none; 
+            background: rgba(255,255,255,0.95); 
+            font-size:14px; 
+        }
+        button { 
+            background:#4c4e4e; 
+            color:white; 
+            padding:12px; 
+            border:none; 
+            border-radius:6px; 
+            width:100%; 
+            font-weight:700; 
+            margin-top:10px; 
+            cursor:pointer;
+        }
+        .small { 
+            font-size:13px; 
+            margin-top:8px; 
+            text-align:center; 
+            color:#cfefff; 
+        }
+        .top-links { 
+            position:absolute; 
+            top:18px; 
+            right:18px; 
+        }
+        .user-icon { 
+            position: absolute; 
+            top: 18px; 
+            right: 18px; 
+            width:42px; height:42px; 
+            border-radius:50%; 
+            background:#263547; 
+            display:flex; 
+            align-items:center; 
+            justify-content:center; 
+            color:#fff; 
+            font-weight:700; 
+            cursor:pointer; 
+        }
+        .owner-credit { 
+            position: fixed; 
+            bottom: 10px; 
+            right: 10px; 
+            background: rgba(0,0,0,0.7); 
+            padding: 5px 10px; 
+            border-radius: 5px; 
+            font-size: 12px; 
+        }
+        .contact-section {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(0,0,0,0.6);
+            border-radius: 8px;
+            font-size: 14px;
+            color: #fff;
+        }
+        /* Admin Icon - Bottom Left */
+        .admin-icon {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            width: 40px;
+            height: 40px;
+            background: rgba(15, 15, 15, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .admin-icon:hover {
+            background: rgb(17, 17, 17);
+            transform: scale(1.1);
+        }
+        .admin-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container { max-width: 98vw; margin: 22px auto; padding: 14px; }
+            h1 { font-size:1.25rem;}
+            input { padding:7px; font-size:13px;}
+            button { padding:10px; font-size:14px;}
+            .admin-icon { width:42px; height:42px; left:8px; bottom:8px;}
+            .owner-credit { font-size:10px; padding:4px 8px;}
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container { max-width: 90vw; }
+            .admin-icon { width:46px; height:46px;}
+        }
+    </style>
+</head>
+<body>
+    <!-- Admin Icon - Bottom Left -->
+    <a href="{{ url_for('admin_login') }}" class="admin-icon" title="Admin Login">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+        </svg>
+    </a>
+    <div class="container">
+        <h1>Create an Account</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul>
+              {% for category, message in messages %}
+                <li class="flash {{ category }}">{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        <form method="POST">
+            <div class="form-group">
+                <label>Username *</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" name="phone">
+            </div>
+            <div class="form-group">
+                <label>Passport</label>
+                <input type="text" name="passport">
+            </div>
+            <div class="form-group">
+                <label>Password *</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password *</label>
+                <input type="password" name="password2" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p class="small">Already have an account? <a href="{{ url_for('login') }}" style="color:#ffd;">Login</a></p>
+    </div>
+    <div class="owner-credit">Developed by Harishwar S and Suhas J</div>
+</body>
+</html>

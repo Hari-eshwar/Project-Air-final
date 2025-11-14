@@ -1,0 +1,365 @@
+CS1000 | Bangalore -> London | Departure: 01-12-2025 00:00 | Arrival: 01-12-2025 08:00 | Price: $150 | Airline: CloudSky
+CS1001 | London -> Paris | Departure: 02-12-2025 00:00 | Arrival: 02-12-2025 08:00 | Price: $151 | Airline: Global Airways
+CS1002 | Paris -> Tokyo | Departure: 03-12-2025 00:00 | Arrival: 03-12-2025 08:00 | Price: $152 | Airline: AirNova
+CS1003 | Tokyo -> Dubai | Departure: 04-12-2025 00:00 | Arrival: 04-12-2025 08:00 | Price: $153 | Airline: AirIndia
+CS1004 | Dubai -> Delhi | Departure: 05-12-2025 00:00 | Arrival: 05-12-2025 08:00 | Price: $154 | Airline: CloudSky
+CS1005 | Delhi -> New York | Departure: 06-12-2025 00:00 | Arrival: 06-12-2025 08:00 | Price: $155 | Airline: Global Airways
+CS1006 | New York -> Bangkok | Departure: 07-12-2025 00:00 | Arrival: 07-12-2025 08:00 | Price: $156 | Airline: AirNova
+CS1007 | Bangkok -> Malasiya | Departure: 08-12-2025 00:00 | Arrival: 08-12-2025 08:00 | Price: $157 | Airline: AirIndia
+CS1008 | Malasiya -> Melbourne | Departure: 09-12-2025 00:00 | Arrival: 09-12-2025 08:00 | Price: $158 | Airline: CloudSky
+CS1009 | Melbourne -> Moscow | Departure: 10-12-2025 00:00 | Arrival: 10-12-2025 08:00 | Price: $159 | Airline: Global Airways
+CS1010 | Moscow -> Jerusalem | Departure: 11-12-2025 00:00 | Arrival: 11-12-2025 08:00 | Price: $160 | Airline: AirNova
+CS1011 | Jerusalem -> Madrid | Departure: 12-12-2025 00:00 | Arrival: 12-12-2025 08:00 | Price: $161 | Airline: AirIndia
+CS1012 | Madrid -> Rome | Departure: 13-12-2025 00:00 | Arrival: 13-12-2025 08:00 | Price: $162 | Airline: CloudSky
+CS1013 | Rome -> Amsterdam | Departure: 14-12-2025 00:00 | Arrival: 14-12-2025 08:00 | Price: $163 | Airline: Global Airways
+CS1014 | Amsterdam -> Riyadh | Departure: 15-12-2025 00:00 | Arrival: 15-12-2025 08:00 | Price: $164 | Airline: AirNova
+CS1015 | Riyadh -> Singapore | Departure: 16-12-2025 00:00 | Arrival: 16-12-2025 08:00 | Price: $165 | Airline: AirIndia
+CS1016 | Singapore -> AbuDhabi | Departure: 17-12-2025 00:00 | Arrival: 17-12-2025 08:00 | Price: $166 | Airline: CloudSky
+CS1017 | AbuDhabi -> Wellington | Departure: 18-12-2025 00:00 | Arrival: 18-12-2025 08:00 | Price: $167 | Airline: Global Airways
+CS1018 | Wellington -> Budapest | Departure: 19-12-2025 00:00 | Arrival: 19-12-2025 08:00 | Price: $168 | Airline: AirNova
+CS1019 | Budapest -> Bangalore | Departure: 20-12-2025 00:00 | Arrival: 20-12-2025 08:00 | Price: $169 | Airline: AirIndia
+CS1020 | Bangalore -> London | Departure: 21-12-2025 00:00 | Arrival: 21-12-2025 08:00 | Price: $170 | Airline: CloudSky
+CS1021 | London -> Paris | Departure: 22-12-2025 00:00 | Arrival: 22-12-2025 08:00 | Price: $171 | Airline: Global Airways
+CS1022 | Paris -> Tokyo | Departure: 23-12-2025 00:00 | Arrival: 23-12-2025 08:00 | Price: $172 | Airline: AirNova
+CS1023 | Tokyo -> Dubai | Departure: 24-12-2025 00:00 | Arrival: 24-12-2025 08:00 | Price: $173 | Airline: AirIndia
+CS1024 | Dubai -> Delhi | Departure: 25-12-2025 00:00 | Arrival: 25-12-2025 08:00 | Price: $174 | Airline: CloudSky
+CS1025 | Delhi -> New York | Departure: 26-12-2025 00:00 | Arrival: 26-12-2025 08:00 | Price: $175 | Airline: Global Airways
+CS1026 | New York -> Bangkok | Departure: 27-12-2025 00:00 | Arrival: 27-12-2025 08:00 | Price: $176 | Airline: AirNova
+CS1027 | Bangkok -> Malasiya | Departure: 28-12-2025 00:00 | Arrival: 28-12-2025 08:00 | Price: $177 | Airline: AirIndia
+CS1028 | Malasiya -> Melbourne | Departure: 29-12-2025 00:00 | Arrival: 29-12-2025 08:00 | Price: $178 | Airline: CloudSky
+CS1029 | Melbourne -> Moscow | Departure: 30-12-2025 00:00 | Arrival: 30-12-2025 08:00 | Price: $179 | Airline: Global Airways
+CS1030 | Moscow -> Jerusalem | Departure: 31-12-2025 00:00 | Arrival: 31-12-2025 08:00 | Price: $180 | Airline: AirNova
+CS1031 | Jerusalem -> Madrid | Departure: 01-01-2026 00:00 | Arrival: 01-01-2026 08:00 | Price: $181 | Airline: AirIndia
+CS1032 | Madrid -> Rome | Departure: 02-01-2026 00:00 | Arrival: 02-01-2026 08:00 | Price: $182 | Airline: CloudSky
+CS1033 | Rome -> Amsterdam | Departure: 03-01-2026 00:00 | Arrival: 03-01-2026 08:00 | Price: $183 | Airline: Global Airways
+CS1034 | Amsterdam -> Riyadh | Departure: 04-01-2026 00:00 | Arrival: 04-01-2026 08:00 | Price: $184 | Airline: AirNova
+CS1035 | Riyadh -> Singapore | Departure: 05-01-2026 00:00 | Arrival: 05-01-2026 08:00 | Price: $185 | Airline: AirIndia
+CS1036 | Singapore -> AbuDhabi | Departure: 06-01-2026 00:00 | Arrival: 06-01-2026 08:00 | Price: $186 | Airline: CloudSky
+CS1037 | AbuDhabi -> Wellington | Departure: 07-01-2026 00:00 | Arrival: 07-01-2026 08:00 | Price: $187 | Airline: Global Airways
+CS1038 | Wellington -> Budapest | Departure: 08-01-2026 00:00 | Arrival: 08-01-2026 08:00 | Price: $188 | Airline: AirNova
+CS1039 | Budapest -> Bangalore | Departure: 09-01-2026 00:00 | Arrival: 09-01-2026 08:00 | Price: $189 | Airline: AirIndia
+CS1040 | Bangalore -> London | Departure: 10-01-2026 00:00 | Arrival: 10-01-2026 08:00 | Price: $190 | Airline: CloudSky
+CS1041 | London -> Paris | Departure: 11-01-2026 00:00 | Arrival: 11-01-2026 08:00 | Price: $191 | Airline: Global Airways
+CS1042 | Paris -> Tokyo | Departure: 12-01-2026 00:00 | Arrival: 12-01-2026 08:00 | Price: $192 | Airline: AirNova
+CS1043 | Tokyo -> Dubai | Departure: 13-01-2026 00:00 | Arrival: 13-01-2026 08:00 | Price: $193 | Airline: AirIndia
+CS1044 | Dubai -> Delhi | Departure: 14-01-2026 00:00 | Arrival: 14-01-2026 08:00 | Price: $194 | Airline: CloudSky
+CS1045 | Delhi -> New York | Departure: 15-01-2026 00:00 | Arrival: 15-01-2026 08:00 | Price: $195 | Airline: Global Airways
+CS1046 | New York -> Bangkok | Departure: 16-01-2026 00:00 | Arrival: 16-01-2026 08:00 | Price: $196 | Airline: AirNova
+CS1047 | Bangkok -> Malasiya | Departure: 17-01-2026 00:00 | Arrival: 17-01-2026 08:00 | Price: $197 | Airline: AirIndia
+CS1048 | Malasiya -> Melbourne | Departure: 18-01-2026 00:00 | Arrival: 18-01-2026 08:00 | Price: $198 | Airline: CloudSky
+CS1049 | Melbourne -> Moscow | Departure: 19-01-2026 00:00 | Arrival: 19-01-2026 08:00 | Price: $199 | Airline: Global Airways
+CS1050 | Moscow -> Jerusalem | Departure: 20-01-2026 00:00 | Arrival: 20-01-2026 08:00 | Price: $200 | Airline: AirNova
+CS1051 | Jerusalem -> Madrid | Departure: 21-01-2026 00:00 | Arrival: 21-01-2026 08:00 | Price: $201 | Airline: AirIndia
+CS1052 | Madrid -> Rome | Departure: 22-01-2026 00:00 | Arrival: 22-01-2026 08:00 | Price: $202 | Airline: CloudSky
+CS1053 | Rome -> Amsterdam | Departure: 23-01-2026 00:00 | Arrival: 23-01-2026 08:00 | Price: $203 | Airline: Global Airways
+CS1054 | Amsterdam -> Riyadh | Departure: 24-01-2026 00:00 | Arrival: 24-01-2026 08:00 | Price: $204 | Airline: AirNova
+CS1055 | Riyadh -> Singapore | Departure: 25-01-2026 00:00 | Arrival: 25-01-2026 08:00 | Price: $205 | Airline: AirIndia
+CS1056 | Singapore -> AbuDhabi | Departure: 26-01-2026 00:00 | Arrival: 26-01-2026 08:00 | Price: $206 | Airline: CloudSky
+CS1057 | AbuDhabi -> Wellington | Departure: 27-01-2026 00:00 | Arrival: 27-01-2026 08:00 | Price: $207 | Airline: Global Airways
+CS1058 | Wellington -> Budapest | Departure: 28-01-2026 00:00 | Arrival: 28-01-2026 08:00 | Price: $208 | Airline: AirNova
+CS1059 | Budapest -> Bangalore | Departure: 29-01-2026 00:00 | Arrival: 29-01-2026 08:00 | Price: $209 | Airline: AirIndia
+CS1060 | Bangalore -> London | Departure: 30-01-2026 00:00 | Arrival: 30-01-2026 08:00 | Price: $210 | Airline: CloudSky
+CS1061 | London -> Paris | Departure: 31-01-2026 00:00 | Arrival: 31-01-2026 08:00 | Price: $211 | Airline: Global Airways
+CS1062 | Paris -> Tokyo | Departure: 01-02-2026 00:00 | Arrival: 01-02-2026 08:00 | Price: $212 | Airline: AirNova
+CS1063 | Tokyo -> Dubai | Departure: 02-02-2026 00:00 | Arrival: 02-02-2026 08:00 | Price: $213 | Airline: AirIndia
+CS1064 | Dubai -> Delhi | Departure: 03-02-2026 00:00 | Arrival: 03-02-2026 08:00 | Price: $214 | Airline: CloudSky
+CS1065 | Delhi -> New York | Departure: 04-02-2026 00:00 | Arrival: 04-02-2026 08:00 | Price: $215 | Airline: Global Airways
+CS1066 | New York -> Bangkok | Departure: 05-02-2026 00:00 | Arrival: 05-02-2026 08:00 | Price: $216 | Airline: AirNova
+CS1067 | Bangkok -> Malasiya | Departure: 06-02-2026 00:00 | Arrival: 06-02-2026 08:00 | Price: $217 | Airline: AirIndia
+CS1068 | Malasiya -> Melbourne | Departure: 07-02-2026 00:00 | Arrival: 07-02-2026 08:00 | Price: $218 | Airline: CloudSky
+CS1069 | Melbourne -> Moscow | Departure: 08-02-2026 00:00 | Arrival: 08-02-2026 08:00 | Price: $219 | Airline: Global Airways
+CS1070 | Moscow -> Jerusalem | Departure: 09-02-2026 00:00 | Arrival: 09-02-2026 08:00 | Price: $220 | Airline: AirNova
+CS1071 | Jerusalem -> Madrid | Departure: 10-02-2026 00:00 | Arrival: 10-02-2026 08:00 | Price: $221 | Airline: AirIndia
+CS1072 | Madrid -> Rome | Departure: 11-02-2026 00:00 | Arrival: 11-02-2026 08:00 | Price: $222 | Airline: CloudSky
+CS1073 | Rome -> Amsterdam | Departure: 12-02-2026 00:00 | Arrival: 12-02-2026 08:00 | Price: $223 | Airline: Global Airways
+CS1074 | Amsterdam -> Riyadh | Departure: 13-02-2026 00:00 | Arrival: 13-02-2026 08:00 | Price: $224 | Airline: AirNova
+CS1075 | Riyadh -> Singapore | Departure: 14-02-2026 00:00 | Arrival: 14-02-2026 08:00 | Price: $225 | Airline: AirIndia
+CS1076 | Singapore -> AbuDhabi | Departure: 15-02-2026 00:00 | Arrival: 15-02-2026 08:00 | Price: $226 | Airline: CloudSky
+CS1077 | AbuDhabi -> Wellington | Departure: 16-02-2026 00:00 | Arrival: 16-02-2026 08:00 | Price: $227 | Airline: Global Airways
+CS1078 | Wellington -> Budapest | Departure: 17-02-2026 00:00 | Arrival: 17-02-2026 08:00 | Price: $228 | Airline: AirNova
+CS1079 | Budapest -> Bangalore | Departure: 18-02-2026 00:00 | Arrival: 18-02-2026 08:00 | Price: $229 | Airline: AirIndia
+CS1080 | Bangalore -> London | Departure: 19-02-2026 00:00 | Arrival: 19-02-2026 08:00 | Price: $230 | Airline: CloudSky
+CS1081 | London -> Paris | Departure: 20-02-2026 00:00 | Arrival: 20-02-2026 08:00 | Price: $231 | Airline: Global Airways
+CS1082 | Paris -> Tokyo | Departure: 21-02-2026 00:00 | Arrival: 21-02-2026 08:00 | Price: $232 | Airline: AirNova
+CS1083 | Tokyo -> Dubai | Departure: 22-02-2026 00:00 | Arrival: 22-02-2026 08:00 | Price: $233 | Airline: AirIndia
+CS1084 | Dubai -> Delhi | Departure: 23-02-2026 00:00 | Arrival: 23-02-2026 08:00 | Price: $234 | Airline: CloudSky
+CS1085 | Delhi -> New York | Departure: 24-02-2026 00:00 | Arrival: 24-02-2026 08:00 | Price: $235 | Airline: Global Airways
+CS1086 | New York -> Bangkok | Departure: 25-02-2026 00:00 | Arrival: 25-02-2026 08:00 | Price: $236 | Airline: AirNova
+CS1087 | Bangkok -> Malasiya | Departure: 26-02-2026 00:00 | Arrival: 26-02-2026 08:00 | Price: $237 | Airline: AirIndia
+CS1088 | Malasiya -> Melbourne | Departure: 27-02-2026 00:00 | Arrival: 27-02-2026 08:00 | Price: $238 | Airline: CloudSky
+CS1089 | Melbourne -> Moscow | Departure: 28-02-2026 00:00 | Arrival: 28-02-2026 08:00 | Price: $239 | Airline: Global Airways
+CS1090 | Moscow -> Jerusalem | Departure: 01-03-2026 00:00 | Arrival: 01-03-2026 08:00 | Price: $240 | Airline: AirNova
+CS1091 | Jerusalem -> Madrid | Departure: 02-03-2026 00:00 | Arrival: 02-03-2026 08:00 | Price: $241 | Airline: AirIndia
+CS1092 | Madrid -> Rome | Departure: 03-03-2026 00:00 | Arrival: 03-03-2026 08:00 | Price: $242 | Airline: CloudSky
+CS1093 | Rome -> Amsterdam | Departure: 04-03-2026 00:00 | Arrival: 04-03-2026 08:00 | Price: $243 | Airline: Global Airways
+CS1094 | Amsterdam -> Riyadh | Departure: 05-03-2026 00:00 | Arrival: 05-03-2026 08:00 | Price: $244 | Airline: AirNova
+CS1095 | Riyadh -> Singapore | Departure: 06-03-2026 00:00 | Arrival: 06-03-2026 08:00 | Price: $245 | Airline: AirIndia
+CS1096 | Singapore -> AbuDhabi | Departure: 07-03-2026 00:00 | Arrival: 07-03-2026 08:00 | Price: $246 | Airline: CloudSky
+CS1097 | AbuDhabi -> Wellington | Departure: 08-03-2026 00:00 | Arrival: 08-03-2026 08:00 | Price: $247 | Airline: Global Airways
+CS1098 | Wellington -> Budapest | Departure: 09-03-2026 00:00 | Arrival: 09-03-2026 08:00 | Price: $248 | Airline: AirNova
+CS1099 | Budapest -> Bangalore | Departure: 10-03-2026 00:00 | Arrival: 10-03-2026 08:00 | Price: $249 | Airline: AirIndia
+CS1100 | Bangalore -> London | Departure: 11-03-2026 00:00 | Arrival: 11-03-2026 08:00 | Price: $150 | Airline: CloudSky
+CS1101 | London -> Paris | Departure: 12-03-2026 00:00 | Arrival: 12-03-2026 08:00 | Price: $151 | Airline: Global Airways
+CS1102 | Paris -> Tokyo | Departure: 13-03-2026 00:00 | Arrival: 13-03-2026 08:00 | Price: $152 | Airline: AirNova
+CS1103 | Tokyo -> Dubai | Departure: 14-03-2026 00:00 | Arrival: 14-03-2026 08:00 | Price: $153 | Airline: AirIndia
+CS1104 | Dubai -> Delhi | Departure: 15-03-2026 00:00 | Arrival: 15-03-2026 08:00 | Price: $154 | Airline: CloudSky
+CS1105 | Delhi -> New York | Departure: 16-03-2026 00:00 | Arrival: 16-03-2026 08:00 | Price: $155 | Airline: Global Airways
+CS1106 | New York -> Bangkok | Departure: 17-03-2026 00:00 | Arrival: 17-03-2026 08:00 | Price: $156 | Airline: AirNova
+CS1107 | Bangkok -> Malasiya | Departure: 18-03-2026 00:00 | Arrival: 18-03-2026 08:00 | Price: $157 | Airline: AirIndia
+CS1108 | Malasiya -> Melbourne | Departure: 19-03-2026 00:00 | Arrival: 19-03-2026 08:00 | Price: $158 | Airline: CloudSky
+CS1109 | Melbourne -> Moscow | Departure: 20-03-2026 00:00 | Arrival: 20-03-2026 08:00 | Price: $159 | Airline: Global Airways
+CS1110 | Moscow -> Jerusalem | Departure: 21-03-2026 00:00 | Arrival: 21-03-2026 08:00 | Price: $160 | Airline: AirNova
+CS1111 | Jerusalem -> Madrid | Departure: 22-03-2026 00:00 | Arrival: 22-03-2026 08:00 | Price: $161 | Airline: AirIndia
+CS1112 | Madrid -> Rome | Departure: 23-03-2026 00:00 | Arrival: 23-03-2026 08:00 | Price: $162 | Airline: CloudSky
+CS1113 | Rome -> Amsterdam | Departure: 24-03-2026 00:00 | Arrival: 24-03-2026 08:00 | Price: $163 | Airline: Global Airways
+CS1114 | Amsterdam -> Riyadh | Departure: 25-03-2026 00:00 | Arrival: 25-03-2026 08:00 | Price: $164 | Airline: AirNova
+CS1115 | Riyadh -> Singapore | Departure: 26-03-2026 00:00 | Arrival: 26-03-2026 08:00 | Price: $165 | Airline: AirIndia
+CS1116 | Singapore -> AbuDhabi | Departure: 27-03-2026 00:00 | Arrival: 27-03-2026 08:00 | Price: $166 | Airline: CloudSky
+CS1117 | AbuDhabi -> Wellington | Departure: 28-03-2026 00:00 | Arrival: 28-03-2026 08:00 | Price: $167 | Airline: Global Airways
+CS1118 | Wellington -> Budapest | Departure: 29-03-2026 00:00 | Arrival: 29-03-2026 08:00 | Price: $168 | Airline: AirNova
+CS1119 | Budapest -> Bangalore | Departure: 30-03-2026 00:00 | Arrival: 30-03-2026 08:00 | Price: $169 | Airline: AirIndia
+CS1120 | Bangalore -> London | Departure: 31-03-2026 00:00 | Arrival: 31-03-2026 08:00 | Price: $170 | Airline: CloudSky
+CS1121 | London -> Paris | Departure: 01-04-2026 00:00 | Arrival: 01-04-2026 08:00 | Price: $171 | Airline: Global Airways
+CS1122 | Paris -> Tokyo | Departure: 02-04-2026 00:00 | Arrival: 02-04-2026 08:00 | Price: $172 | Airline: AirNova
+CS1123 | Tokyo -> Dubai | Departure: 03-04-2026 00:00 | Arrival: 03-04-2026 08:00 | Price: $173 | Airline: AirIndia
+CS1124 | Dubai -> Delhi | Departure: 04-04-2026 00:00 | Arrival: 04-04-2026 08:00 | Price: $174 | Airline: CloudSky
+CS1125 | Delhi -> New York | Departure: 05-04-2026 00:00 | Arrival: 05-04-2026 08:00 | Price: $175 | Airline: Global Airways
+CS1126 | New York -> Bangkok | Departure: 06-04-2026 00:00 | Arrival: 06-04-2026 08:00 | Price: $176 | Airline: AirNova
+CS1127 | Bangkok -> Malasiya | Departure: 07-04-2026 00:00 | Arrival: 07-04-2026 08:00 | Price: $177 | Airline: AirIndia
+CS1128 | Malasiya -> Melbourne | Departure: 08-04-2026 00:00 | Arrival: 08-04-2026 08:00 | Price: $178 | Airline: CloudSky
+CS1129 | Melbourne -> Moscow | Departure: 09-04-2026 00:00 | Arrival: 09-04-2026 08:00 | Price: $179 | Airline: Global Airways
+CS1130 | Moscow -> Jerusalem | Departure: 10-04-2026 00:00 | Arrival: 10-04-2026 08:00 | Price: $180 | Airline: AirNova
+CS1131 | Jerusalem -> Madrid | Departure: 11-04-2026 00:00 | Arrival: 11-04-2026 08:00 | Price: $181 | Airline: AirIndia
+CS1132 | Madrid -> Rome | Departure: 12-04-2026 00:00 | Arrival: 12-04-2026 08:00 | Price: $182 | Airline: CloudSky
+CS1133 | Rome -> Amsterdam | Departure: 13-04-2026 00:00 | Arrival: 13-04-2026 08:00 | Price: $183 | Airline: Global Airways
+CS1134 | Amsterdam -> Riyadh | Departure: 14-04-2026 00:00 | Arrival: 14-04-2026 08:00 | Price: $184 | Airline: AirNova
+CS1135 | Riyadh -> Singapore | Departure: 15-04-2026 00:00 | Arrival: 15-04-2026 08:00 | Price: $185 | Airline: AirIndia
+CS1136 | Singapore -> AbuDhabi | Departure: 16-04-2026 00:00 | Arrival: 16-04-2026 08:00 | Price: $186 | Airline: CloudSky
+CS1137 | AbuDhabi -> Wellington | Departure: 17-04-2026 00:00 | Arrival: 17-04-2026 08:00 | Price: $187 | Airline: Global Airways
+CS1138 | Wellington -> Budapest | Departure: 18-04-2026 00:00 | Arrival: 18-04-2026 08:00 | Price: $188 | Airline: AirNova
+CS1139 | Budapest -> Bangalore | Departure: 19-04-2026 00:00 | Arrival: 19-04-2026 08:00 | Price: $189 | Airline: AirIndia
+CS1140 | Bangalore -> London | Departure: 20-04-2026 00:00 | Arrival: 20-04-2026 08:00 | Price: $190 | Airline: CloudSky
+CS1141 | London -> Paris | Departure: 21-04-2026 00:00 | Arrival: 21-04-2026 08:00 | Price: $191 | Airline: Global Airways
+CS1142 | Paris -> Tokyo | Departure: 22-04-2026 00:00 | Arrival: 22-04-2026 08:00 | Price: $192 | Airline: AirNova
+CS1143 | Tokyo -> Dubai | Departure: 23-04-2026 00:00 | Arrival: 23-04-2026 08:00 | Price: $193 | Airline: AirIndia
+CS1144 | Dubai -> Delhi | Departure: 24-04-2026 00:00 | Arrival: 24-04-2026 08:00 | Price: $194 | Airline: CloudSky
+CS1145 | Delhi -> New York | Departure: 25-04-2026 00:00 | Arrival: 25-04-2026 08:00 | Price: $195 | Airline: Global Airways
+CS1146 | New York -> Bangkok | Departure: 26-04-2026 00:00 | Arrival: 26-04-2026 08:00 | Price: $196 | Airline: AirNova
+CS1147 | Bangkok -> Malasiya | Departure: 27-04-2026 00:00 | Arrival: 27-04-2026 08:00 | Price: $197 | Airline: AirIndia
+CS1148 | Malasiya -> Melbourne | Departure: 28-04-2026 00:00 | Arrival: 28-04-2026 08:00 | Price: $198 | Airline: CloudSky
+CS1149 | Melbourne -> Moscow | Departure: 29-04-2026 00:00 | Arrival: 29-04-2026 08:00 | Price: $199 | Airline: Global Airways
+CS1150 | Moscow -> Jerusalem | Departure: 30-04-2026 00:00 | Arrival: 30-04-2026 08:00 | Price: $200 | Airline: AirNova
+CS1151 | Jerusalem -> Madrid | Departure: 01-05-2026 00:00 | Arrival: 01-05-2026 08:00 | Price: $201 | Airline: AirIndia
+CS1152 | Madrid -> Rome | Departure: 02-05-2026 00:00 | Arrival: 02-05-2026 08:00 | Price: $202 | Airline: CloudSky
+CS1153 | Rome -> Amsterdam | Departure: 03-05-2026 00:00 | Arrival: 03-05-2026 08:00 | Price: $203 | Airline: Global Airways
+CS1154 | Amsterdam -> Riyadh | Departure: 04-05-2026 00:00 | Arrival: 04-05-2026 08:00 | Price: $204 | Airline: AirNova
+CS1155 | Riyadh -> Singapore | Departure: 05-05-2026 00:00 | Arrival: 05-05-2026 08:00 | Price: $205 | Airline: AirIndia
+CS1156 | Singapore -> AbuDhabi | Departure: 06-05-2026 00:00 | Arrival: 06-05-2026 08:00 | Price: $206 | Airline: CloudSky
+CS1157 | AbuDhabi -> Wellington | Departure: 07-05-2026 00:00 | Arrival: 07-05-2026 08:00 | Price: $207 | Airline: Global Airways
+CS1158 | Wellington -> Budapest | Departure: 08-05-2026 00:00 | Arrival: 08-05-2026 08:00 | Price: $208 | Airline: AirNova
+CS1159 | Budapest -> Bangalore | Departure: 09-05-2026 00:00 | Arrival: 09-05-2026 08:00 | Price: $209 | Airline: AirIndia
+CS1160 | Bangalore -> London | Departure: 10-05-2026 00:00 | Arrival: 10-05-2026 08:00 | Price: $210 | Airline: CloudSky
+CS1161 | London -> Paris | Departure: 11-05-2026 00:00 | Arrival: 11-05-2026 08:00 | Price: $211 | Airline: Global Airways
+CS1162 | Paris -> Tokyo | Departure: 12-05-2026 00:00 | Arrival: 12-05-2026 08:00 | Price: $212 | Airline: AirNova
+CS1163 | Tokyo -> Dubai | Departure: 13-05-2026 00:00 | Arrival: 13-05-2026 08:00 | Price: $213 | Airline: AirIndia
+CS1164 | Dubai -> Delhi | Departure: 14-05-2026 00:00 | Arrival: 14-05-2026 08:00 | Price: $214 | Airline: CloudSky
+CS1165 | Delhi -> New York | Departure: 15-05-2026 00:00 | Arrival: 15-05-2026 08:00 | Price: $215 | Airline: Global Airways
+CS1166 | New York -> Bangkok | Departure: 16-05-2026 00:00 | Arrival: 16-05-2026 08:00 | Price: $216 | Airline: AirNova
+CS1167 | Bangkok -> Malasiya | Departure: 17-05-2026 00:00 | Arrival: 17-05-2026 08:00 | Price: $217 | Airline: AirIndia
+CS1168 | Malasiya -> Melbourne | Departure: 18-05-2026 00:00 | Arrival: 18-05-2026 08:00 | Price: $218 | Airline: CloudSky
+CS1169 | Melbourne -> Moscow | Departure: 19-05-2026 00:00 | Arrival: 19-05-2026 08:00 | Price: $219 | Airline: Global Airways
+CS1170 | Moscow -> Jerusalem | Departure: 20-05-2026 00:00 | Arrival: 20-05-2026 08:00 | Price: $220 | Airline: AirNova
+CS1171 | Jerusalem -> Madrid | Departure: 21-05-2026 00:00 | Arrival: 21-05-2026 08:00 | Price: $221 | Airline: AirIndia
+CS1172 | Madrid -> Rome | Departure: 22-05-2026 00:00 | Arrival: 22-05-2026 08:00 | Price: $222 | Airline: CloudSky
+CS1173 | Rome -> Amsterdam | Departure: 23-05-2026 00:00 | Arrival: 23-05-2026 08:00 | Price: $223 | Airline: Global Airways
+CS1174 | Amsterdam -> Riyadh | Departure: 24-05-2026 00:00 | Arrival: 24-05-2026 08:00 | Price: $224 | Airline: AirNova
+CS1175 | Riyadh -> Singapore | Departure: 25-05-2026 00:00 | Arrival: 25-05-2026 08:00 | Price: $225 | Airline: AirIndia
+CS1176 | Singapore -> AbuDhabi | Departure: 26-05-2026 00:00 | Arrival: 26-05-2026 08:00 | Price: $226 | Airline: CloudSky
+CS1177 | AbuDhabi -> Wellington | Departure: 27-05-2026 00:00 | Arrival: 27-05-2026 08:00 | Price: $227 | Airline: Global Airways
+CS1178 | Wellington -> Budapest | Departure: 28-05-2026 00:00 | Arrival: 28-05-2026 08:00 | Price: $228 | Airline: AirNova
+CS1179 | Budapest -> Bangalore | Departure: 29-05-2026 00:00 | Arrival: 29-05-2026 08:00 | Price: $229 | Airline: AirIndia
+CS1180 | Bangalore -> London | Departure: 30-05-2026 00:00 | Arrival: 30-05-2026 08:00 | Price: $230 | Airline: CloudSky
+CS1181 | London -> Paris | Departure: 31-05-2026 00:00 | Arrival: 31-05-2026 08:00 | Price: $231 | Airline: Global Airways
+CS1182 | Paris -> Tokyo | Departure: 01-06-2026 00:00 | Arrival: 01-06-2026 08:00 | Price: $232 | Airline: AirNova
+CS1183 | Tokyo -> Dubai | Departure: 02-06-2026 00:00 | Arrival: 02-06-2026 08:00 | Price: $233 | Airline: AirIndia
+CS1184 | Dubai -> Delhi | Departure: 03-06-2026 00:00 | Arrival: 03-06-2026 08:00 | Price: $234 | Airline: CloudSky
+CS1185 | Delhi -> New York | Departure: 04-06-2026 00:00 | Arrival: 04-06-2026 08:00 | Price: $235 | Airline: Global Airways
+CS1186 | New York -> Bangkok | Departure: 05-06-2026 00:00 | Arrival: 05-06-2026 08:00 | Price: $236 | Airline: AirNova
+CS1187 | Bangkok -> Malasiya | Departure: 06-06-2026 00:00 | Arrival: 06-06-2026 08:00 | Price: $237 | Airline: AirIndia
+CS1188 | Malasiya -> Melbourne | Departure: 07-06-2026 00:00 | Arrival: 07-06-2026 08:00 | Price: $238 | Airline: CloudSky
+CS1189 | Melbourne -> Moscow | Departure: 08-06-2026 00:00 | Arrival: 08-06-2026 08:00 | Price: $239 | Airline: Global Airways
+CS1190 | Moscow -> Jerusalem | Departure: 09-06-2026 00:00 | Arrival: 09-06-2026 08:00 | Price: $240 | Airline: AirNova
+CS1191 | Jerusalem -> Madrid | Departure: 10-06-2026 00:00 | Arrival: 10-06-2026 08:00 | Price: $241 | Airline: AirIndia
+CS1192 | Madrid -> Rome | Departure: 11-06-2026 00:00 | Arrival: 11-06-2026 08:00 | Price: $242 | Airline: CloudSky
+CS1193 | Rome -> Amsterdam | Departure: 12-06-2026 00:00 | Arrival: 12-06-2026 08:00 | Price: $243 | Airline: Global Airways
+CS1194 | Amsterdam -> Riyadh | Departure: 13-06-2026 00:00 | Arrival: 13-06-2026 08:00 | Price: $244 | Airline: AirNova
+CS1195 | Riyadh -> Singapore | Departure: 14-06-2026 00:00 | Arrival: 14-06-2026 08:00 | Price: $245 | Airline: AirIndia
+CS1196 | Singapore -> AbuDhabi | Departure: 15-06-2026 00:00 | Arrival: 15-06-2026 08:00 | Price: $246 | Airline: CloudSky
+CS1197 | AbuDhabi -> Wellington | Departure: 16-06-2026 00:00 | Arrival: 16-06-2026 08:00 | Price: $247 | Airline: Global Airways
+CS1198 | Wellington -> Budapest | Departure: 17-06-2026 00:00 | Arrival: 17-06-2026 08:00 | Price: $248 | Airline: AirNova
+CS1199 | Budapest -> Bangalore | Departure: 18-06-2026 00:00 | Arrival: 18-06-2026 08:00 | Price: $249 | Airline: AirIndia
+CS1200 | Bangalore -> London | Departure: 19-06-2026 00:00 | Arrival: 19-06-2026 08:00 | Price: $150 | Airline: CloudSky
+CS1201 | London -> Paris | Departure: 20-06-2026 00:00 | Arrival: 20-06-2026 08:00 | Price: $151 | Airline: Global Airways
+CS1202 | Paris -> Tokyo | Departure: 21-06-2026 00:00 | Arrival: 21-06-2026 08:00 | Price: $152 | Airline: AirNova
+CS1203 | Tokyo -> Dubai | Departure: 22-06-2026 00:00 | Arrival: 22-06-2026 08:00 | Price: $153 | Airline: AirIndia
+CS1204 | Dubai -> Delhi | Departure: 23-06-2026 00:00 | Arrival: 23-06-2026 08:00 | Price: $154 | Airline: CloudSky
+CS1205 | Delhi -> New York | Departure: 24-06-2026 00:00 | Arrival: 24-06-2026 08:00 | Price: $155 | Airline: Global Airways
+CS1206 | New York -> Bangkok | Departure: 25-06-2026 00:00 | Arrival: 25-06-2026 08:00 | Price: $156 | Airline: AirNova
+CS1207 | Bangkok -> Malasiya | Departure: 26-06-2026 00:00 | Arrival: 26-06-2026 08:00 | Price: $157 | Airline: AirIndia
+CS1208 | Malasiya -> Melbourne | Departure: 27-06-2026 00:00 | Arrival: 27-06-2026 08:00 | Price: $158 | Airline: CloudSky
+CS1209 | Melbourne -> Moscow | Departure: 28-06-2026 00:00 | Arrival: 28-06-2026 08:00 | Price: $159 | Airline: Global Airways
+CS1210 | Moscow -> Jerusalem | Departure: 29-06-2026 00:00 | Arrival: 29-06-2026 08:00 | Price: $160 | Airline: AirNova
+CS1211 | Jerusalem -> Madrid | Departure: 30-06-2026 00:00 | Arrival: 30-06-2026 08:00 | Price: $161 | Airline: AirIndia
+CS1212 | Madrid -> Rome | Departure: 01-07-2026 00:00 | Arrival: 01-07-2026 08:00 | Price: $162 | Airline: CloudSky
+CS1213 | Rome -> Amsterdam | Departure: 02-07-2026 00:00 | Arrival: 02-07-2026 08:00 | Price: $163 | Airline: Global Airways
+CS1214 | Amsterdam -> Riyadh | Departure: 03-07-2026 00:00 | Arrival: 03-07-2026 08:00 | Price: $164 | Airline: AirNova
+CS1215 | Riyadh -> Singapore | Departure: 04-07-2026 00:00 | Arrival: 04-07-2026 08:00 | Price: $165 | Airline: AirIndia
+CS1216 | Singapore -> AbuDhabi | Departure: 05-07-2026 00:00 | Arrival: 05-07-2026 08:00 | Price: $166 | Airline: CloudSky
+CS1217 | AbuDhabi -> Wellington | Departure: 06-07-2026 00:00 | Arrival: 06-07-2026 08:00 | Price: $167 | Airline: Global Airways
+CS1218 | Wellington -> Budapest | Departure: 07-07-2026 00:00 | Arrival: 07-07-2026 08:00 | Price: $168 | Airline: AirNova
+CS1219 | Budapest -> Bangalore | Departure: 08-07-2026 00:00 | Arrival: 08-07-2026 08:00 | Price: $169 | Airline: AirIndia
+CS1220 | Bangalore -> London | Departure: 09-07-2026 00:00 | Arrival: 09-07-2026 08:00 | Price: $170 | Airline: CloudSky
+CS1221 | London -> Paris | Departure: 10-07-2026 00:00 | Arrival: 10-07-2026 08:00 | Price: $171 | Airline: Global Airways
+CS1222 | Paris -> Tokyo | Departure: 11-07-2026 00:00 | Arrival: 11-07-2026 08:00 | Price: $172 | Airline: AirNova
+CS1223 | Tokyo -> Dubai | Departure: 12-07-2026 00:00 | Arrival: 12-07-2026 08:00 | Price: $173 | Airline: AirIndia
+CS1224 | Dubai -> Delhi | Departure: 13-07-2026 00:00 | Arrival: 13-07-2026 08:00 | Price: $174 | Airline: CloudSky
+CS1225 | Delhi -> New York | Departure: 14-07-2026 00:00 | Arrival: 14-07-2026 08:00 | Price: $175 | Airline: Global Airways
+CS1226 | New York -> Bangkok | Departure: 15-07-2026 00:00 | Arrival: 15-07-2026 08:00 | Price: $176 | Airline: AirNova
+CS1227 | Bangkok -> Malasiya | Departure: 16-07-2026 00:00 | Arrival: 16-07-2026 08:00 | Price: $177 | Airline: AirIndia
+CS1228 | Malasiya -> Melbourne | Departure: 17-07-2026 00:00 | Arrival: 17-07-2026 08:00 | Price: $178 | Airline: CloudSky
+CS1229 | Melbourne -> Moscow | Departure: 18-07-2026 00:00 | Arrival: 18-07-2026 08:00 | Price: $179 | Airline: Global Airways
+CS1230 | Moscow -> Jerusalem | Departure: 19-07-2026 00:00 | Arrival: 19-07-2026 08:00 | Price: $180 | Airline: AirNova
+CS1231 | Jerusalem -> Madrid | Departure: 20-07-2026 00:00 | Arrival: 20-07-2026 08:00 | Price: $181 | Airline: AirIndia
+CS1232 | Madrid -> Rome | Departure: 21-07-2026 00:00 | Arrival: 21-07-2026 08:00 | Price: $182 | Airline: CloudSky
+CS1233 | Rome -> Amsterdam | Departure: 22-07-2026 00:00 | Arrival: 22-07-2026 08:00 | Price: $183 | Airline: Global Airways
+CS1234 | Amsterdam -> Riyadh | Departure: 23-07-2026 00:00 | Arrival: 23-07-2026 08:00 | Price: $184 | Airline: AirNova
+CS1235 | Riyadh -> Singapore | Departure: 24-07-2026 00:00 | Arrival: 24-07-2026 08:00 | Price: $185 | Airline: AirIndia
+CS1236 | Singapore -> AbuDhabi | Departure: 25-07-2026 00:00 | Arrival: 25-07-2026 08:00 | Price: $186 | Airline: CloudSky
+CS1237 | AbuDhabi -> Wellington | Departure: 26-07-2026 00:00 | Arrival: 26-07-2026 08:00 | Price: $187 | Airline: Global Airways
+CS1238 | Wellington -> Budapest | Departure: 27-07-2026 00:00 | Arrival: 27-07-2026 08:00 | Price: $188 | Airline: AirNova
+CS1239 | Budapest -> Bangalore | Departure: 28-07-2026 00:00 | Arrival: 28-07-2026 08:00 | Price: $189 | Airline: AirIndia
+CS1240 | Bangalore -> London | Departure: 29-07-2026 00:00 | Arrival: 29-07-2026 08:00 | Price: $190 | Airline: CloudSky
+CS1241 | London -> Paris | Departure: 30-07-2026 00:00 | Arrival: 30-07-2026 08:00 | Price: $191 | Airline: Global Airways
+CS1242 | Paris -> Tokyo | Departure: 31-07-2026 00:00 | Arrival: 31-07-2026 08:00 | Price: $192 | Airline: AirNova
+CS1243 | Tokyo -> Dubai | Departure: 01-08-2026 00:00 | Arrival: 01-08-2026 08:00 | Price: $193 | Airline: AirIndia
+CS1244 | Dubai -> Delhi | Departure: 02-08-2026 00:00 | Arrival: 02-08-2026 08:00 | Price: $194 | Airline: CloudSky
+CS1245 | Delhi -> New York | Departure: 03-08-2026 00:00 | Arrival: 03-08-2026 08:00 | Price: $195 | Airline: Global Airways
+CS1246 | New York -> Bangkok | Departure: 04-08-2026 00:00 | Arrival: 04-08-2026 08:00 | Price: $196 | Airline: AirNova
+CS1247 | Bangkok -> Malasiya | Departure: 05-08-2026 00:00 | Arrival: 05-08-2026 08:00 | Price: $197 | Airline: AirIndia
+CS1248 | Malasiya -> Melbourne | Departure: 06-08-2026 00:00 | Arrival: 06-08-2026 08:00 | Price: $198 | Airline: CloudSky
+CS1249 | Melbourne -> Moscow | Departure: 07-08-2026 00:00 | Arrival: 07-08-2026 08:00 | Price: $199 | Airline: Global Airways
+CS1250 | Moscow -> Jerusalem | Departure: 08-08-2026 00:00 | Arrival: 08-08-2026 08:00 | Price: $200 | Airline: AirNova
+CS1251 | Jerusalem -> Madrid | Departure: 09-08-2026 00:00 | Arrival: 09-08-2026 08:00 | Price: $201 | Airline: AirIndia
+CS1252 | Madrid -> Rome | Departure: 10-08-2026 00:00 | Arrival: 10-08-2026 08:00 | Price: $202 | Airline: CloudSky
+CS1253 | Rome -> Amsterdam | Departure: 11-08-2026 00:00 | Arrival: 11-08-2026 08:00 | Price: $203 | Airline: Global Airways
+CS1254 | Amsterdam -> Riyadh | Departure: 12-08-2026 00:00 | Arrival: 12-08-2026 08:00 | Price: $204 | Airline: AirNova
+CS1255 | Riyadh -> Singapore | Departure: 13-08-2026 00:00 | Arrival: 13-08-2026 08:00 | Price: $205 | Airline: AirIndia
+CS1256 | Singapore -> AbuDhabi | Departure: 14-08-2026 00:00 | Arrival: 14-08-2026 08:00 | Price: $206 | Airline: CloudSky
+CS1257 | AbuDhabi -> Wellington | Departure: 15-08-2026 00:00 | Arrival: 15-08-2026 08:00 | Price: $207 | Airline: Global Airways
+CS1258 | Wellington -> Budapest | Departure: 16-08-2026 00:00 | Arrival: 16-08-2026 08:00 | Price: $208 | Airline: AirNova
+CS1259 | Budapest -> Bangalore | Departure: 17-08-2026 00:00 | Arrival: 17-08-2026 08:00 | Price: $209 | Airline: AirIndia
+CS1260 | Bangalore -> London | Departure: 18-08-2026 00:00 | Arrival: 18-08-2026 08:00 | Price: $210 | Airline: CloudSky
+CS1261 | London -> Paris | Departure: 19-08-2026 00:00 | Arrival: 19-08-2026 08:00 | Price: $211 | Airline: Global Airways
+CS1262 | Paris -> Tokyo | Departure: 20-08-2026 00:00 | Arrival: 20-08-2026 08:00 | Price: $212 | Airline: AirNova
+CS1263 | Tokyo -> Dubai | Departure: 21-08-2026 00:00 | Arrival: 21-08-2026 08:00 | Price: $213 | Airline: AirIndia
+CS1264 | Dubai -> Delhi | Departure: 22-08-2026 00:00 | Arrival: 22-08-2026 08:00 | Price: $214 | Airline: CloudSky
+CS1265 | Delhi -> New York | Departure: 23-08-2026 00:00 | Arrival: 23-08-2026 08:00 | Price: $215 | Airline: Global Airways
+CS1266 | New York -> Bangkok | Departure: 24-08-2026 00:00 | Arrival: 24-08-2026 08:00 | Price: $216 | Airline: AirNova
+CS1267 | Bangkok -> Malasiya | Departure: 25-08-2026 00:00 | Arrival: 25-08-2026 08:00 | Price: $217 | Airline: AirIndia
+CS1268 | Malasiya -> Melbourne | Departure: 26-08-2026 00:00 | Arrival: 26-08-2026 08:00 | Price: $218 | Airline: CloudSky
+CS1269 | Melbourne -> Moscow | Departure: 27-08-2026 00:00 | Arrival: 27-08-2026 08:00 | Price: $219 | Airline: Global Airways
+CS1270 | Moscow -> Jerusalem | Departure: 28-08-2026 00:00 | Arrival: 28-08-2026 08:00 | Price: $220 | Airline: AirNova
+CS1271 | Jerusalem -> Madrid | Departure: 29-08-2026 00:00 | Arrival: 29-08-2026 08:00 | Price: $221 | Airline: AirIndia
+CS1272 | Madrid -> Rome | Departure: 30-08-2026 00:00 | Arrival: 30-08-2026 08:00 | Price: $222 | Airline: CloudSky
+CS1273 | Rome -> Amsterdam | Departure: 31-08-2026 00:00 | Arrival: 31-08-2026 08:00 | Price: $223 | Airline: Global Airways
+CS1274 | Amsterdam -> Riyadh | Departure: 01-09-2026 00:00 | Arrival: 01-09-2026 08:00 | Price: $224 | Airline: AirNova
+CS1275 | Riyadh -> Singapore | Departure: 02-09-2026 00:00 | Arrival: 02-09-2026 08:00 | Price: $225 | Airline: AirIndia
+CS1276 | Singapore -> AbuDhabi | Departure: 03-09-2026 00:00 | Arrival: 03-09-2026 08:00 | Price: $226 | Airline: CloudSky
+CS1277 | AbuDhabi -> Wellington | Departure: 04-09-2026 00:00 | Arrival: 04-09-2026 08:00 | Price: $227 | Airline: Global Airways
+CS1278 | Wellington -> Budapest | Departure: 05-09-2026 00:00 | Arrival: 05-09-2026 08:00 | Price: $228 | Airline: AirNova
+CS1279 | Budapest -> Bangalore | Departure: 06-09-2026 00:00 | Arrival: 06-09-2026 08:00 | Price: $229 | Airline: AirIndia
+CS1280 | Bangalore -> London | Departure: 07-09-2026 00:00 | Arrival: 07-09-2026 08:00 | Price: $230 | Airline: CloudSky
+CS1281 | London -> Paris | Departure: 08-09-2026 00:00 | Arrival: 08-09-2026 08:00 | Price: $231 | Airline: Global Airways
+CS1282 | Paris -> Tokyo | Departure: 09-09-2026 00:00 | Arrival: 09-09-2026 08:00 | Price: $232 | Airline: AirNova
+CS1283 | Tokyo -> Dubai | Departure: 10-09-2026 00:00 | Arrival: 10-09-2026 08:00 | Price: $233 | Airline: AirIndia
+CS1284 | Dubai -> Delhi | Departure: 11-09-2026 00:00 | Arrival: 11-09-2026 08:00 | Price: $234 | Airline: CloudSky
+CS1285 | Delhi -> New York | Departure: 12-09-2026 00:00 | Arrival: 12-09-2026 08:00 | Price: $235 | Airline: Global Airways
+CS1286 | New York -> Bangkok | Departure: 13-09-2026 00:00 | Arrival: 13-09-2026 08:00 | Price: $236 | Airline: AirNova
+CS1287 | Bangkok -> Malasiya | Departure: 14-09-2026 00:00 | Arrival: 14-09-2026 08:00 | Price: $237 | Airline: AirIndia
+CS1288 | Malasiya -> Melbourne | Departure: 15-09-2026 00:00 | Arrival: 15-09-2026 08:00 | Price: $238 | Airline: CloudSky
+CS1289 | Melbourne -> Moscow | Departure: 16-09-2026 00:00 | Arrival: 16-09-2026 08:00 | Price: $239 | Airline: Global Airways
+CS1290 | Moscow -> Jerusalem | Departure: 17-09-2026 00:00 | Arrival: 17-09-2026 08:00 | Price: $240 | Airline: AirNova
+CS1291 | Jerusalem -> Madrid | Departure: 18-09-2026 00:00 | Arrival: 18-09-2026 08:00 | Price: $241 | Airline: AirIndia
+CS1292 | Madrid -> Rome | Departure: 19-09-2026 00:00 | Arrival: 19-09-2026 08:00 | Price: $242 | Airline: CloudSky
+CS1293 | Rome -> Amsterdam | Departure: 20-09-2026 00:00 | Arrival: 20-09-2026 08:00 | Price: $243 | Airline: Global Airways
+CS1294 | Amsterdam -> Riyadh | Departure: 21-09-2026 00:00 | Arrival: 21-09-2026 08:00 | Price: $244 | Airline: AirNova
+CS1295 | Riyadh -> Singapore | Departure: 22-09-2026 00:00 | Arrival: 22-09-2026 08:00 | Price: $245 | Airline: AirIndia
+CS1296 | Singapore -> AbuDhabi | Departure: 23-09-2026 00:00 | Arrival: 23-09-2026 08:00 | Price: $246 | Airline: CloudSky
+CS1297 | AbuDhabi -> Wellington | Departure: 24-09-2026 00:00 | Arrival: 24-09-2026 08:00 | Price: $247 | Airline: Global Airways
+CS1298 | Wellington -> Budapest | Departure: 25-09-2026 00:00 | Arrival: 25-09-2026 08:00 | Price: $248 | Airline: AirNova
+CS1299 | Budapest -> Bangalore | Departure: 26-09-2026 00:00 | Arrival: 26-09-2026 08:00 | Price: $249 | Airline: AirIndia
+CS1300 | Bangalore -> London | Departure: 27-09-2026 00:00 | Arrival: 27-09-2026 08:00 | Price: $150 | Airline: CloudSky
+CS1301 | London -> Paris | Departure: 28-09-2026 00:00 | Arrival: 28-09-2026 08:00 | Price: $151 | Airline: Global Airways
+CS1302 | Paris -> Tokyo | Departure: 29-09-2026 00:00 | Arrival: 29-09-2026 08:00 | Price: $152 | Airline: AirNova
+CS1303 | Tokyo -> Dubai | Departure: 30-09-2026 00:00 | Arrival: 30-09-2026 08:00 | Price: $153 | Airline: AirIndia
+CS1304 | Dubai -> Delhi | Departure: 01-10-2026 00:00 | Arrival: 01-10-2026 08:00 | Price: $154 | Airline: CloudSky
+CS1305 | Delhi -> New York | Departure: 02-10-2026 00:00 | Arrival: 02-10-2026 08:00 | Price: $155 | Airline: Global Airways
+CS1306 | New York -> Bangkok | Departure: 03-10-2026 00:00 | Arrival: 03-10-2026 08:00 | Price: $156 | Airline: AirNova
+CS1307 | Bangkok -> Malasiya | Departure: 04-10-2026 00:00 | Arrival: 04-10-2026 08:00 | Price: $157 | Airline: AirIndia
+CS1308 | Malasiya -> Melbourne | Departure: 05-10-2026 00:00 | Arrival: 05-10-2026 08:00 | Price: $158 | Airline: CloudSky
+CS1309 | Melbourne -> Moscow | Departure: 06-10-2026 00:00 | Arrival: 06-10-2026 08:00 | Price: $159 | Airline: Global Airways
+CS1310 | Moscow -> Jerusalem | Departure: 07-10-2026 00:00 | Arrival: 07-10-2026 08:00 | Price: $160 | Airline: AirNova
+CS1311 | Jerusalem -> Madrid | Departure: 08-10-2026 00:00 | Arrival: 08-10-2026 08:00 | Price: $161 | Airline: AirIndia
+CS1312 | Madrid -> Rome | Departure: 09-10-2026 00:00 | Arrival: 09-10-2026 08:00 | Price: $162 | Airline: CloudSky
+CS1313 | Rome -> Amsterdam | Departure: 10-10-2026 00:00 | Arrival: 10-10-2026 08:00 | Price: $163 | Airline: Global Airways
+CS1314 | Amsterdam -> Riyadh | Departure: 11-10-2026 00:00 | Arrival: 11-10-2026 08:00 | Price: $164 | Airline: AirNova
+CS1315 | Riyadh -> Singapore | Departure: 12-10-2026 00:00 | Arrival: 12-10-2026 08:00 | Price: $165 | Airline: AirIndia
+CS1316 | Singapore -> AbuDhabi | Departure: 13-10-2026 00:00 | Arrival: 13-10-2026 08:00 | Price: $166 | Airline: CloudSky
+CS1317 | AbuDhabi -> Wellington | Departure: 14-10-2026 00:00 | Arrival: 14-10-2026 08:00 | Price: $167 | Airline: Global Airways
+CS1318 | Wellington -> Budapest | Departure: 15-10-2026 00:00 | Arrival: 15-10-2026 08:00 | Price: $168 | Airline: AirNova
+CS1319 | Budapest -> Bangalore | Departure: 16-10-2026 00:00 | Arrival: 16-10-2026 08:00 | Price: $169 | Airline: AirIndia
+CS1320 | Bangalore -> London | Departure: 17-10-2026 00:00 | Arrival: 17-10-2026 08:00 | Price: $170 | Airline: CloudSky
+CS1321 | London -> Paris | Departure: 18-10-2026 00:00 | Arrival: 18-10-2026 08:00 | Price: $171 | Airline: Global Airways
+CS1322 | Paris -> Tokyo | Departure: 19-10-2026 00:00 | Arrival: 19-10-2026 08:00 | Price: $172 | Airline: AirNova
+CS1323 | Tokyo -> Dubai | Departure: 20-10-2026 00:00 | Arrival: 20-10-2026 08:00 | Price: $173 | Airline: AirIndia
+CS1324 | Dubai -> Delhi | Departure: 21-10-2026 00:00 | Arrival: 21-10-2026 08:00 | Price: $174 | Airline: CloudSky
+CS1325 | Delhi -> New York | Departure: 22-10-2026 00:00 | Arrival: 22-10-2026 08:00 | Price: $175 | Airline: Global Airways
+CS1326 | New York -> Bangkok | Departure: 23-10-2026 00:00 | Arrival: 23-10-2026 08:00 | Price: $176 | Airline: AirNova
+CS1327 | Bangkok -> Malasiya | Departure: 24-10-2026 00:00 | Arrival: 24-10-2026 08:00 | Price: $177 | Airline: AirIndia
+CS1328 | Malasiya -> Melbourne | Departure: 25-10-2026 00:00 | Arrival: 25-10-2026 08:00 | Price: $178 | Airline: CloudSky
+CS1329 | Melbourne -> Moscow | Departure: 26-10-2026 00:00 | Arrival: 26-10-2026 08:00 | Price: $179 | Airline: Global Airways
+CS1330 | Moscow -> Jerusalem | Departure: 27-10-2026 00:00 | Arrival: 27-10-2026 08:00 | Price: $180 | Airline: AirNova
+CS1331 | Jerusalem -> Madrid | Departure: 28-10-2026 00:00 | Arrival: 28-10-2026 08:00 | Price: $181 | Airline: AirIndia
+CS1332 | Madrid -> Rome | Departure: 29-10-2026 00:00 | Arrival: 29-10-2026 08:00 | Price: $182 | Airline: CloudSky
+CS1333 | Rome -> Amsterdam | Departure: 30-10-2026 00:00 | Arrival: 30-10-2026 08:00 | Price: $183 | Airline: Global Airways
+CS1334 | Amsterdam -> Riyadh | Departure: 31-10-2026 00:00 | Arrival: 31-10-2026 08:00 | Price: $184 | Airline: AirNova
+CS1335 | Riyadh -> Singapore | Departure: 01-11-2026 00:00 | Arrival: 01-11-2026 08:00 | Price: $185 | Airline: AirIndia
+CS1336 | Singapore -> AbuDhabi | Departure: 02-11-2026 00:00 | Arrival: 02-11-2026 08:00 | Price: $186 | Airline: CloudSky
+CS1337 | AbuDhabi -> Wellington | Departure: 03-11-2026 00:00 | Arrival: 03-11-2026 08:00 | Price: $187 | Airline: Global Airways
+CS1338 | Wellington -> Budapest | Departure: 04-11-2026 00:00 | Arrival: 04-11-2026 08:00 | Price: $188 | Airline: AirNova
+CS1339 | Budapest -> Bangalore | Departure: 05-11-2026 00:00 | Arrival: 05-11-2026 08:00 | Price: $189 | Airline: AirIndia
+CS1340 | Bangalore -> London | Departure: 06-11-2026 00:00 | Arrival: 06-11-2026 08:00 | Price: $190 | Airline: CloudSky
+CS1341 | London -> Paris | Departure: 07-11-2026 00:00 | Arrival: 07-11-2026 08:00 | Price: $191 | Airline: Global Airways
+CS1342 | Paris -> Tokyo | Departure: 08-11-2026 00:00 | Arrival: 08-11-2026 08:00 | Price: $192 | Airline: AirNova
+CS1343 | Tokyo -> Dubai | Departure: 09-11-2026 00:00 | Arrival: 09-11-2026 08:00 | Price: $193 | Airline: AirIndia
+CS1344 | Dubai -> Delhi | Departure: 10-11-2026 00:00 | Arrival: 10-11-2026 08:00 | Price: $194 | Airline: CloudSky
+CS1345 | Delhi -> New York | Departure: 11-11-2026 00:00 | Arrival: 11-11-2026 08:00 | Price: $195 | Airline: Global Airways
+CS1346 | New York -> Bangkok | Departure: 12-11-2026 00:00 | Arrival: 12-11-2026 08:00 | Price: $196 | Airline: AirNova
+CS1347 | Bangkok -> Malasiya | Departure: 13-11-2026 00:00 | Arrival: 13-11-2026 08:00 | Price: $197 | Airline: AirIndia
+CS1348 | Malasiya -> Melbourne | Departure: 14-11-2026 00:00 | Arrival: 14-11-2026 08:00 | Price: $198 | Airline: CloudSky
+CS1349 | Melbourne -> Moscow | Departure: 15-11-2026 00:00 | Arrival: 15-11-2026 08:00 | Price: $199 | Airline: Global Airways
+CS1350 | Moscow -> Jerusalem | Departure: 16-11-2026 00:00 | Arrival: 16-11-2026 08:00 | Price: $200 | Airline: AirNova
+CS1351 | Jerusalem -> Madrid | Departure: 17-11-2026 00:00 | Arrival: 17-11-2026 08:00 | Price: $201 | Airline: AirIndia
+CS1352 | Madrid -> Rome | Departure: 18-11-2026 00:00 | Arrival: 18-11-2026 08:00 | Price: $202 | Airline: CloudSky
+CS1353 | Rome -> Amsterdam | Departure: 19-11-2026 00:00 | Arrival: 19-11-2026 08:00 | Price: $203 | Airline: Global Airways
+CS1354 | Amsterdam -> Riyadh | Departure: 20-11-2026 00:00 | Arrival: 20-11-2026 08:00 | Price: $204 | Airline: AirNova
+CS1355 | Riyadh -> Singapore | Departure: 21-11-2026 00:00 | Arrival: 21-11-2026 08:00 | Price: $205 | Airline: AirIndia
+CS1356 | Singapore -> AbuDhabi | Departure: 22-11-2026 00:00 | Arrival: 22-11-2026 08:00 | Price: $206 | Airline: CloudSky
+CS1357 | AbuDhabi -> Wellington | Departure: 23-11-2026 00:00 | Arrival: 23-11-2026 08:00 | Price: $207 | Airline: Global Airways
+CS1358 | Wellington -> Budapest | Departure: 24-11-2026 00:00 | Arrival: 24-11-2026 08:00 | Price: $208 | Airline: AirNova
+CS1359 | Budapest -> Bangalore | Departure: 25-11-2026 00:00 | Arrival: 25-11-2026 08:00 | Price: $209 | Airline: AirIndia
+CS1360 | Bangalore -> London | Departure: 26-11-2026 00:00 | Arrival: 26-11-2026 08:00 | Price: $210 | Airline: CloudSky
+CS1361 | London -> Paris | Departure: 27-11-2026 00:00 | Arrival: 27-11-2026 08:00 | Price: $211 | Airline: Global Airways
+CS1362 | Paris -> Tokyo | Departure: 28-11-2026 00:00 | Arrival: 28-11-2026 08:00 | Price: $212 | Airline: AirNova
+CS1363 | Tokyo -> Dubai | Departure: 29-11-2026 00:00 | Arrival: 29-11-2026 08:00 | Price: $213 | Airline: AirIndia
+CS1364 | Dubai -> Delhi | Departure: 30-11-2026 00:00 | Arrival: 30-11-2026 08:00 | Price: $214 | Airline: CloudSky

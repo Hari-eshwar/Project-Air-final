@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | CloudSky</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+        #vanta-bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+        .login-container {
+            background: rgba(0, 0, 0, 0.7);
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        }
+        h1 {
+            text-align: center;
+            color: #4fc3f7;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            background: rgba(255,255,255,0.9);
+            font-size: 16px;
+        }
+        button {
+            background: #0288d1;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            width: 100%;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background: #0277bd;
+            transform: translateY(-2px);
+        }
+        .error {
+            color: #080808;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+        .owner-credit {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .login-container { max-width: 90vw; margin: 24px auto; padding:18px;}
+            h1 { font-size:1.2rem;}
+            .owner-credit { font-size:10px; padding:4px 8px;}
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .login-container { max-width: 70vw;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="vanta-bg"></div>
+    <div class="login-container">
+        <h1>Admin Portal</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul>
+              {% for category, message in messages %}
+                <li class="flash {{ category }}">{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        <form method="POST">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="owner-credit">Developed by Harishwar S and Suhas J</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+    <script>
+      VANTA.WAVES({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x0,
+        shininess: 100.20,
+        waveHeight: 0.00,
+        waveSpeed: 0.00,
+        zoom: 1.00
+      });
+    </script>
+</body>
+</html>

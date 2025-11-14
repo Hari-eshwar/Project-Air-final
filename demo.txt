@@ -1,0 +1,150 @@
+import os
+import random
+import sqlite3
+from datetime import datetime, timedelta
+
+from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask_cors import CORS
+from werkzeug.security import generate_password_hash, check_password_hash
+
+app = Flask(__name__, template_folder='templates', static_folder='static')
+app.secret_key = os.getenv("SECRET_KEY", os.urandom(24))
+app.config['DATABASE'] = 'flights.db'
+app.config['ADMIN_DB'] = 'admin.db'
+app.config['USERS_DB'] = 'users.db'
+
+CORS(app)
+
+MAX_BOOKING_DAYS = 365
+FRONTEND_DATE_FORMAT = '%d-%m-%Y'
+
+# ---------- DB Connections ----------
+def get_db_connection():
+    conn = sqlite3.connect(app.config['DATABASE'])
+    conn.row_factory = sqlite3.Row
+    return conn
+
+def get_user_connection():
+    conn = sqlite3.connect(app.config['USERS_DB'])
+    conn.row_factory = sqlite3.Row
+    return conn
+
+# ---------- Date Validation ----------
+def validate_date(date_str):
+    try:
+        try:
+            date = datetime.strptime(date_str, '%d-%m-%Y').date()
+        except ValueError:
+            date = datetime.strptime(date_str, '%Y-%m-%d').date()
+
+        today = datetime.now().date()
+        if date < today:
+            return False, "Date cannot be in the past"
+        if date > today + timedelta(days=MAX_BOOKING_DAYS):
+            return False, f"Maximum booking window is {MAX_BOOKING_DAYS} days"
+        return True, ""
+    except ValueError:
+        return False, "Invalid date format"
+
+# ---------- Inject Current User ----------
+@app.context_processor
+def inject_user():
+    user = None
+    bookings = []
+    if session.get('user_id'):
+        try:
+            with get_user_connection() as uconn:
+                user_row = uconn.execute(
+                    "SELECT id, username, full_name, email, phone, passport, created_at FROM users WHERE id = ?",
+                    (session['user_id'],)
+                ).fetchone()
+                if user_row:
+                    user = dict(user_row)
+            with get_db_connection() as conn:
+                user_bookings = conn.execute('''
+                    SELECT b.id as booking_id, b.booking_ref, b.seat_number, b.payment_amount, b.created_at,
+                           f.flight_no, f.origin, f.destination, f.departure
+                    FROM bookings b
+                    JOIN flights f ON f.id = b.flight_id
+                    WHERE b.user_id = ?
+                    ORDER BY b.created_at DESC
+                    LIMIT 10
+                ''', (session['user_id'],)).fetchall()
+                bookings = [dict(r) for r in user_bookings]
+        except Exception as e:
+            print("Error injecting user:", e)
+    return dict(current_user=user, current_user_bookings=bookings)
+
+# ---------- Routes ----------
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/home')
+def home():
+    today = datetime.now().strftime(FRONTEND_DATE_FORMAT)
+    max_date = (datetime.now() + timedelta(days=MAX_BOOKING_DAYS)).strftime(FRONTEND_DATE_FORMAT)
+    with get_db_connection() as conn:
+        cities = conn.execute("SELECT DISTINCT origin FROM flights UNION SELECT DISTINCT destination FROM flights").fetchall()
+        flights = conn.execute("SELECT * FROM flights ORDER BY departure").fetchall()
+    return render_template(
+        'home.html',
+        min_date=today,
+        max_date=max_date,
+        cities=[city[0] for city in cities],
+        flights=flights
+    )
+
+@app.route('/search', methods=['POST'])
+def search_results():
+    origin = request.form.get('origin', '').strip()
+    dest = request.form.get('destination', '').strip()
+    date_str = request.form.get('date')
+    try:
+        passengers = int(request.form.get('passengers', '1'))
+    except ValueError:
+        flash("Invalid number of passengers", "error")
+        return redirect(url_for('home'))
+
+    valid, msg = validate_date(date_str)
+    if not valid:
+        flash(msg, 'error')
+        return redirect(url_for('home'))
+
+    try:
+        try:
+            search_date = datetime.strptime(date_str, '%d-%m-%Y').date()
+        except ValueError:
+            search_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+    except ValueError:
+        flash("Invalid date format", "error")
+        return redirect(url_for('home'))
+
+    with get_db_connection() as conn:
+        search_date_db = search_date.strftime('%Y-%m-%d')
+        flights = conn.execute('''
+            SELECT * FROM flights 
+            WHERE LOWER(origin) = LOWER(?) AND LOWER(destination) = LOWER(?)
+            AND DATE(departure) = ?
+            AND seats >= ?
+            ORDER BY departure
+        ''', (origin.strip(), dest.strip(), search_date_db, passengers)).fetchall()
+
+    if not flights:
+        flash("No flights found for your search.", "info")
+        return redirect(url_for('home'))
+
+    return render_template('search_results.html', flights=flights, search_date=date_str,
+                           origin=origin, destination=dest, passengers=passengers)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+# (Remaining booking, ticket, user auth, and admin routes unchanged from your existing code)
+# Paste them here as in your current file...
+if __name__ == '__main__':
+    os.makedirs('templates', exist_ok=True)
+    os.makedirs('static', exist_ok=True)
+    os.makedirs('tickets', exist_ok=True)
+    app.run(debug=True)

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | CloudSky</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body { margin:0; font-family:'Josefin Sans',sans-serif; color:white; background:#000; overflow-x:hidden;}
+    #vanta-bg { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
+    .container { display:flex; flex-direction:column; align-items:center; padding:20px; }
+    h1 { font-size:2.5rem; margin-bottom:20px; }
+    form { background:rgba(0,0,0,0.7); padding:20px; border-radius:10px; max-width:500px; width:100%; margin-bottom:20px; }
+    .form-group { margin-bottom:15px; }
+    label { display:block; margin-bottom:5px; font-weight:600; }
+    input { width:100%; padding:10px; border-radius:5px; border:none; background:rgba(255,255,255,0.9); }
+    button { background:linear-gradient(to right,#535353,#232424); color:white; padding:12px; border:none; border-radius:6px; width:100%; font-weight:700; cursor:pointer; transition:all 0.3s; }
+    button:hover { opacity:0.9; transform:translateY(-2px); }
+    .search-filter { max-width:500px; width:100%; margin:35px 0; }
+    .search-filter input { width:100%; padding:10px; border-radius:6px; border:none; background:rgba(255,255,255,0.9); }
+    .flights-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; width:100%; max-width:1200px; }
+    .flight-card { background:rgba(117, 116, 116, 0.829); padding:15px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); cursor:pointer; transition:transform 0.2s ease,background 0.3s ease; }
+    .flight-card:hover { transform:translateY(-5px); background:rgba(255,255,255,0.15); }
+    .flight-title { font-size:1.2rem; font-weight:bold; margin-bottom:8px; }
+    .flight-info { font-size:0.9rem; margin-bottom:5px; }
+    .user-area { position:absolute; top:16px; right:16px; }
+    .user-btn { background:rgba(2,136,209,0.9); border-radius:24px; width:44px; height:44px; display:flex; align-items:center; justify-content:center; cursor:pointer; }
+    .user-dropdown { display:none; position:absolute; right:0; top:56px; background:rgba(0,0,0,0.85); width:320px; border-radius:8px; padding:12px; }
+    .user-dropdown a { color:#66c9f7; text-decoration:none; display:block; margin:8px 0; }
+
+    /* Admin Icon - Bottom Left */
+    .admin-icon {
+      position: fixed;
+      bottom: 15px;
+      left: 15px;
+      width: 40px;
+      height: 40px;
+      background: rgba(15, 15, 15, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 100;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .admin-icon:hover {
+      background: rgb(8, 8, 8);
+      transform: scale(1.1);
+    }
+    .admin-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+    .owner-credit {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.7);
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+      h1 { font-size:1.6rem; }
+      form { max-width:98%; padding:12px; }
+      .search-filter { max-width:98%; }
+      .flights-grid { grid-template-columns:1fr; gap:15px; }
+      .flight-title { font-size:1rem; }
+      .user-area { top:6px; right:6px; }
+      .user-btn { width:36px; height:36px; font-size:1rem;}
+      .user-dropdown { width:90vw; }
+      .admin-icon { width:42px; height:42px; left:8px; bottom:8px;}
+      .owner-credit { font-size:10px; padding: 4px 8px; }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .container { padding:12px; }
+      .search-filter { max-width:90%; }
+      .flights-grid { grid-template-columns:repeat(2,1fr);}
+      .admin-icon { width:46px; height:46px;}
+    }
+    @media (min-width: 1025px) {
+      .flights-grid { grid-template-columns:repeat(3,1fr);}
+    }
+  </style>
+</head>
+<body>
+
+<div class="user-area">
+  <div class="user-btn" id="userBtn">
+    {% if current_user %}
+      {{ current_user.full_name[0]|upper }}
+    {% else %}
+      U
+    {% endif %}
+  </div>
+  <div class="user-dropdown" id="userDropdown">
+    {% if current_user %}
+      <h4>{{ current_user.full_name }}</h4>
+      <div><strong>Email:</strong> {{ current_user.email }}</div>
+      <strong>Your Bookings</strong>
+      {% if current_user_bookings %}
+        {% for b in current_user_bookings %}
+          <div>{{ b.flight_no }} | {{ b.origin }} → {{ b.destination }} ({{ b.seat_number or 'N/A' }})</div>
+        {% endfor %}
+      {% else %}
+        <div>No bookings yet</div>
+      {% endif %}
+      <a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+      <a href="{{ url_for('login') }}">Login</a>
+      <a href="{{ url_for('register') }}">Register</a>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Admin Icon - Bottom Left -->
+<a href="{{ url_for('admin_login') }}" class="admin-icon" title="Admin Login">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+  </svg>
+</a>
+
+<div id="vanta-bg"></div>
+
+<div class="container">
+  <h1>Welcome to CloudSky Airlines</h1>
+  <!-- FIX: Explicitly set action to /search -->
+  <form method="POST" action="/search">
+    <div class="form-group">
+      <label>From</label>
+      <input type="text" name="origin" required>
+    </div>
+    <div class="form-group">
+      <label>To</label>
+      <input type="text" name="destination" required>
+    </div>
+    <div class="form-group">
+      <label>Date</label>
+      <input type="text" name="date" required placeholder="DD-MM-YYYY">
+    </div>
+    <button type="submit">Book Flight</button>
+  </form>
+
+  <div class="search-filter">
+    <input type="text" id="flightSearch" placeholder="Search flights by city or date...">
+  </div>
+
+  <div class="flights-grid" id="flightsGrid">
+    {% for flight in flights %}
+    <div class="flight-card" data-origin="{{ flight.origin }}" data-destination="{{ flight.destination }}" data-date="{{ flight.departure }}">
+      <div class="flight-title">{{ flight.flight_no }} - {{ flight.origin }} → {{ flight.destination }}</div>
+      <div class="flight-info"><strong>Departure:</strong> {{ flight.departure }}</div>
+      <div class="flight-info"><strong>Price:</strong> ${{ flight.price }}</div>
+      <div class="flight-info"><strong>Seats:</strong> {{ flight.seats }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+<script>
+VANTA.WAVES({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x0,
+                shininess: 100.20,
+                waveHeight: 0.00,
+                waveSpeed: 0.00,
+                zoom: 1.50
+            });
+const userBtn=document.getElementById('userBtn'),dropdown=document.getElementById('userDropdown');
+userBtn.addEventListener('click',()=>dropdown.style.display=dropdown.style.display==='block'?'none':'block');
+window.addEventListener('click',e=>{if(!userBtn.contains(e.target)&&!dropdown.contains(e.target))dropdown.style.display='none';});
+document.getElementById('flightSearch').addEventListener('input',function(){
+  const term=this.value.toLowerCase();
+  document.querySelectorAll('.flight-card').forEach(card=>{
+    const match=card.dataset.origin.toLowerCase().includes(term)||
+                card.dataset.destination.toLowerCase().includes(term)||
+                card.dataset.date.toLowerCase().includes(term);
+    card.style.display=match?'block':'none';
+  });
+});
+document.querySelectorAll('.flight-card').forEach(card=>{
+  card.addEventListener('click',()=>{
+    document.querySelector('input[name="origin"]').value=card.dataset.origin;
+    document.querySelector('input[name="destination"]').value=card.dataset.destination;
+    document.querySelector('input[name="date"]').value=card.dataset.date;
+    document.querySelector('form').submit();
+  });
+});
+</script>
+</body>
+</html>

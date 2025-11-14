@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSky Airlines - Welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+       
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            color: #d1d5db;
+            height: 100%;
+        }
+       
+        #vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+       
+        .container-card {
+            background: rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(20px);
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+        }
+       
+        .custom-button {
+            background: radial-gradient(circle at 30% 30%, rgb(10, 10, 10) 0%, #0e0d0d 38%, #0c0c0c 50%, #0f0f0f 60%, black 100%);
+            color: white;
+            padding: 14px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: inset 0 2px 6px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.5), 0 4px 15px rgba(0,0,0,0.6);
+        }
+       
+        .custom-button:hover {
+            background: radial-gradient(circle at 30% 30%, black 10%, #464444 45%, rgb(71, 70, 70) 50%, #444343 65%, black 100%);
+            transform: translateY(-2px);
+            box-shadow: inset 0 2px 6px rgba(255,255,255,0.4), inset 0 -2px 6px rgba(0,0,0,0.6), 0 6px 18px rgba(0,0,0,0.7);
+        }
+       
+        .owner-credit {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 10;
+        }
+
+        /* Admin Icon - Bottom Left */
+        .admin-icon {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            width: 50px;
+            height: 50px;
+            background: rgba(14, 13, 13, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .admin-icon:hover {
+            background: rgb(8, 8, 8);
+            transform: scale(1.1);
+        }
+
+        .admin-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .container-card {
+                max-width: 90%;
+                padding: 25px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 2rem !important;
+            }
+
+            .custom-button {
+                padding: 12px 16px;
+                font-size: 14px;
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .space-x-4 {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .admin-icon {
+                width: 40px;
+                height: 40px;
+                bottom: 10px;
+                left: 10px;
+            }
+
+            .owner-credit {
+                font-size: 10px;
+                padding: 4px 8px;
+                bottom: 8px;
+                right: 8px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container-card {
+                max-width: 550px;
+                padding: 35px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .container-card {
+                max-width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div id="vanta-bg"></div>
+
+    <!-- Admin Icon (Bottom Left) -->
+    <a href="{{ url_for('admin_login') }}" class="admin-icon" title="Admin Login">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+        </svg>
+    </a>
+   
+    <!-- Main Content -->
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="container-card text-center">
+            <h1 class="text-5xl font-bold text-white mb-6">Welcome to CloudSky Airlines</h1>
+            <p class="text-gray-300 mb-8">Your journey begins here. Book flights with ease and comfort.</p>
+            <div class="space-x-4">
+                <a href="{{ url_for('login') }}" class="custom-button">Login</a>
+                <a href="{{ url_for('register') }}" class="custom-button">Register</a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="owner-credit">Developed by Harishwar S and Suhas J</div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x0,
+            shininess: 100.20,
+            waveHeight: 0.00,
+            waveSpeed: 0.00,
+            zoom: 1.50
+        });
+    </script>
+</body>
+</html>

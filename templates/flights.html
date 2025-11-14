@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Available Flights | CloudSky</title>
+  <style>
+    :root{--card:rgba(0,0,0,0.72);--accent:#4fc3f7}
+    body{margin:0;font-family:Segoe UI, Tahoma, sans-serif;background:#000;color:#fff;overflow-x:hidden}
+    #video-bg{position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;z-index:-1}
+    .container{background:var(--card);max-width:1100px;margin:30px auto;padding:24px;border-radius:12px}
+    h1{color:var(--accent);text-align:center}
+    .flights-table{width:100%;border-collapse:collapse;margin-top:18px}
+    .flights-table th, .flights-table td{padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .book-btn{background:#0288d1;color:white;padding:8px 14px;border-radius:6px;text-decoration:none}
+    .user-area{position:absolute;top:16px;right:16px}
+    .admin-icon{position:fixed;left:16px;bottom:16px;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1200;background:rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(0,0,0,0.45)}
+    .admin-icon svg{width:66%;height:66%}
+    @media (max-width:900px){ .flights-table td, .flights-table th{padding:9px} }
+    @media (max-width:600px){ .container{margin:12px;padding:14px} .flights-table{font-size:0.92rem} }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="video-bg"><source src="/static/clouds.mp4" type="video/mp4"><img src="/static/clouds.jpg" alt="Cloud background"></video>
+  <div class="user-area">
+    <div class="user-btn" id="userBtn">{{ current_user.full_name[0]|upper if current_user else 'U' }}</div>
+    <div class="user-dropdown" id="userDropdown">
+      {% if current_user %}
+        <h4>{{ current_user.full_name }}</h4>
+        <div><strong>Email:</strong> {{ current_user.email }}</div>
+        <div><strong>Your Bookings</strong></div>
+        {% for b in current_user_bookings %}
+          <div>{{ b.flight_no }} | {{ b.origin }} → {{ b.destination }}</div>
+        {% endfor %}
+        <a href="{{ url_for('logout') }}">Logout</a>
+      {% else %}
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('register') }}">Register</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Available Flights</h1>
+    <table class="flights-table">
+      <thead>
+        <tr><th>Flight No.</th><th>From</th><th>To</th><th>Departure</th><th>Price</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        {% for flight in flights %}
+          <tr>
+            <td>{{ flight.flight_no }}</td>
+            <td>{{ flight.origin }}</td>
+            <td>{{ flight.destination }}</td>
+            <td>{{ flight.departure }}</td>
+            <td>${{ flight.price }}</td>
+            <td><a href="/book/{{ flight.id }}" class="book-btn">Book Now</a></td>
+          </tr>
+        {% else %}
+          <tr><td colspan="6" style="text-align:center">No flights available</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <a href="/admin/login" class="admin-icon" aria-label="Admin login">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="rgba(0,0,0,0.12)"/><path d="M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.4 15a7.8 7.8 0 00.1-2 7.8 7.8 0 00-.1-2l2.1-1.6-2-3.4-2.5 1a7.8 7.8 0 00-1.7-1L14.7 2h-4l-.7 2.1a7.8 7.8 0 00-1.7 1l-2.5-1L3.1 9.4 5.2 11a7.8 7.8 0 00-.1 2c0 .7.04 1.4.12 2L3.1 17.6 5 21l2.5-1a7.8 7.8 0 001.7 1L10.7 24h4l.7-2.1a7.8 7.8 0 001.7-1l2.5 1 1.9-3.4-2-1.6z" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+
+  <script>
+    const userBtn = document.getElementById('userBtn'), dropdown = document.getElementById('userDropdown');
+    if(userBtn){
+      userBtn.addEventListener('click', ()=> dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block');
+      window.addEventListener('click', (e)=> { if(!userBtn.contains(e.target) && !dropdown.contains(e.target)) dropdown.style.display = 'none'; });
+    }
+  </script>
+</body>
+</html>
