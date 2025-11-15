@@ -392,7 +392,8 @@ def admin_logout():
     return redirect(url_for('admin_login'))
 
 if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))
     os.makedirs('templates', exist_ok=True)
     os.makedirs('static', exist_ok=True)
     os.makedirs('tickets', exist_ok=True)
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=port, debug=True)
